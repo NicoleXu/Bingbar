@@ -70,8 +70,24 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.bottom{position: fixed; width: 100%; bottom: 10%; text-align: center;}
-.bottom input{ display: inline-block;  background-color: none; border-radius:5px; border:1px solid #ffffff; padding: 10px 30px; font-size: 36px; color: #ffffff; }
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+}
+
+.bottom input {
+    display: inline-block;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    font-size: 36px;
+    color: #ffffff;
+    animation: buling 2s infinite;
+}
 
 .wrap:after {
     display: block;
