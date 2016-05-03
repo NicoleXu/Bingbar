@@ -1,0 +1,15 @@
+<input type="radio" name="bingbar" value="nanbao" onchange ="getValue();"/>
+<input type="radio" name="bingbar" value="suobao" onchange ="getValue();"/>
+
+<script>
+function getValue(){
+	var bingbar = document.getElementsByName("bingbar");
+	var length = bingbar.length;
+	for(var i =0;i < length;i++){
+    	if(bingbar[i].checked){
+			var radioValue = bingbar[i].value;
+			alert(radioValue);
+    	}
+	}
+}
+</script>
