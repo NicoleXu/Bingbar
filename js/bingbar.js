@@ -1,32 +1,18 @@
-// function successively() {
-//     var suobar = false;
-//     var nanbar = true;
-//     if (suobar) {
-//         //balabalbala
-//         suobar = false;
-//         nanbar = true;
-//     } else {
-//         //balabalbala
-//         nanbar = false;
-//         suobar = true;
-//     }
-// }
-
 window.onload = function() {
-    function chose() {
-        var person_1 = document.getElementById('person_1');
-        var person_2 = document.getElementById('person_2');
-        // body...
-        if (person_1.checked) {
-            suobar = true;
-            nanbar = false;
-            alert("aha suo bao frist");
-        } else {
-            nanbar = true;
-            suobar = false;
-            alert("aha nan bao frist");
+    var person_1 = document.getElementById('person_1');
+    var person_2 = document.getElementById('person_2');
+
+    function getValue() {
+        var person = document.getElementsByName("person");
+        var length = person.length;
+        for (var i = 0; i < length; i++) {
+            if (person[i].checked) {
+                var radioValue = person[i].value;
+                alert(radioValue);
+            }
         }
     }
-    // body...
-    chose();
+    person_1.addEventListener("change", getValue);
+    person_2.addEventListener("change", getValue);
+
 }
