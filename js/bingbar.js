@@ -17,7 +17,7 @@ window.onload = function() {
         var person_1 = document.getElementById('person_1');
         var person_2 = document.getElementById('person_2');
         // body...
-        if (person_1.checked == true) {
+        if (person_1.checked) {
             suobar = true;
             nanbar = false;
             alert("aha suo bao frist");
