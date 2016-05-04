@@ -99,6 +99,7 @@ a {
     width: 99px;
     height: 99px;
     float: left;
+    position: relative;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
@@ -109,11 +110,12 @@ a {
     border-radius: 20px;
     width: 29px;
     height: 29px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
 }
 
 .wrap .suobar {
-    left: -15px;
-    top: -15px;
     background-color: #00ff00;
     border: 1px solid #0f0;
     animation: buling 3s infinite;
@@ -123,8 +125,6 @@ a {
 }
 
 .wrap .nanbar {
-    left: 285px;
-    top: 285px;
     background-color: #ff0000;
     border: 1px solid #f00;
     animation: buling 5s infinite;
