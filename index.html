@@ -4,39 +4,36 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/tools.js"></script>
     <script type="text/javascript" src="js/bingbar.js"></script>
 </head>
 
 <body>
     <div class="left flag">
-        <h2>锁宝001</h2>
-        <h2><input type="radio"/></h2></div>
-    <div class="wrap">
-        <h1>Bingbar</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <span class="bar suobar" id="suobar"></span>
-        <span class="bar nanbar" id="nanbar"></span>
-    </div>
+        <h2>锁宝</h2>
+        <h2><input type="radio" name="player" value="sente"/></h2>
+	</div>
     <div class="right">
         <h2>楠宝</h2>
-        <h2><input type="radio"/></h2></div>
+        <h2><input type="radio" name="player" value="gote"/></h2>
+	</div>
+
+    <div class="wrap">
+        <div></div> <div></div> <div></div> <div></div>
+        <div></div> <div></div> <div></div> <div></div>
+        <div></div> <div></div> <div></div> <div></div>
+        <div></div> <div></div> <div></div> <div></div>
+
+		<ul class="chess" id="chess">
+			<li></li> <li></li> <li></li> <li></li> <li></li>
+			<li></li> <li></li> <li></li> <li></li> <li></li>
+			<li></li> <li></li> <li></li> <li></li> <li></li>
+			<li></li> <li></li> <li></li> <li></li> <li></li>
+			<li></li> <li></li> <li></li> <li></li> <li></li>
+		</ul>
+    </div>
     <div class="bottom">
-        <input type="button" id="start" value="Start">
+        <input type="button" id="start" value="Start" onclick="start();">
     </div>
 </body>
 
